@@ -4,6 +4,9 @@ Atom simulization and visualization
 # Authors #
 Shashank Iswara and Kiran Chandrasekhar
 
+# Link #
+https://www.cs.utexas.edu/~kiran03/Atoms/index.html
+
 ## Running the program ##
 All the necessary files to run the program can be found in the "dist" directory.
 
