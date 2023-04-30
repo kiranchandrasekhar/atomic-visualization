@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="static/main.css" />
+    <title>WebGL - atoms</title>
+  </head>
+  <body>
+    <div class="container" position="relative">
+      <canvas id="glCanvas" class="card" width="1280" height="960">
+        Your browser does not support HTML5 </canvas
+      >
+      <canvas id="textCanvas" width="1280" height="960">
+        Your browser does not support HTML5 </canvas
+      >
+      <div class="controls" id="controls-container" position="absolute">
+        <div class="control-type" id="orbital">
+          <p>Quantum Numbers (n, l, m): </p>
+          <div class="slider-container" id="n-number" style="width: 100%">
+            <label class="slider-label" for="n-number-slider">n: </label>
+            <input type="range" min="1" max="7" value="1" class="slider" id="n-number-slider" name="n-number-slider" />
+            <span class="slider-value" id="n-number-val">1</span>
+          </div>
+          <div class="slider-container" id="l-number" style="width: 100%">
+            <label class="slider-label" for="l-number-slider">l: </label>
+            <input type="range" min="0" max="0" value="0" class="slider" id="l-number-slider" name="l-number-slider" />
+            <span class="slider-value" id="l-number-val">0</span>
+          </div>
+          <div class="slider-container" id="m-number" style="width: 100%">
+            <label class="slider-label" for="m-number-slider">m: </label>
+            <input type="range" min="0" max="0" value="0" class="slider" id="m-number-slider" name="m-number-slider" />
+            <span class="slider-value" id="m-number-val">0</span>
+          </div>
+          <div class="button-container" id="orbital-activate" style="width: 100%">
+            <input value="Update" type="button" class="activate-button" id = "orbital-activate-button" />
+          </div>
+        </div>
+
+        <div class="control-type" id="atomic">
+          <p>Atomic Number: </p>
+          <div class="slider-container" id="atomic-number" style="width: 100%">
+            <label class="slider-label" for="atomic-number-slider">n: </label>
+            <input type="range" min="1" max="35" value="1" class="slider" id="atomic-number-slider" name="atomic-number-slider" />
+            <span class="slider-value" id="atomic-number-val">1</span>
+          </div>
+          <div class="button-container" id="atomic-activate" style="width: 100%">
+            <input value="Update" type="button" class="activate-button" id = "atomic-activate-button" />
+          </div>
+        </div>
+
+        <div class="control-type" id="cutaway">
+          <p>Toggle Cutaway: </p>
+          <div class="button-container" id="cutaway-toggle" style="width: 100%">
+            <input value="Disabled" type="button" class="toggle-button" id = "cutaway-toggle-button" />
+          </div>
+        </div>
+
+        <div class="control-type" id="Shading">
+          <p>Toggle Shading: </p>
+          <div class="button-container" id="shading-toggle" style="width: 100%">
+            <input value="Disabled" type="button" class="toggle-button" id = "shading-toggle-button" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+<script type="module" src="./index.js"></script>
+
+    <br />
+  </body>
+</html>
